@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+
+    font-family:"Monteserrat", sans-serif;
+    }
+
+:root{
+    --roxo-100: #ded0f173;
+    --roxo-200: #8E35FF;
+    --roxo-300: #5A13B4;
+    --roxo-400: rgb(59, 18, 112); 
+        
+    --branco-300: #ffffff;
+    
+    --dourado-300: #CC7F0B;
+}
+
+footer{
+    background-color: var(--roxo-100);
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+a{
+    color: var(--roxo-300);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+h1,h2,p, span{
+color:var(--roxo-400);
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+header{
+    margin: 2% 15%;
+}
+
+.tamanhoSecao{
+    margin: 4% 15%;
+}
+
+
+
+/*cabecalho*/
+.menuNavegacao{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputHeader{
+    border: none;
+    color: var(--roxo-300)
+}
+
+.inputHeader:focus{
+    outline:none;
+}
+
+.inputHeader::placeholder{
+    color:var(--roxo-300)
+}
+
+
+.campoPesquisa{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid var(--roxo-300);
+    opacity: 0.40;
+    padding: 0.1875rem 0.8125rem;
+}
+
+/*fim do cabecalho*/
+
+
+/*titulo*/
+.subtitulo{
+    font-size: 6.5rem;
+    max-width: 65%;
+    font-weight: 300;
+}
+.posicaoSubtitulo{
+display: flex;
+align-items: flex-end;
+gap:8%;
+}
+
+.tamanhoTexto{
+max-width: 14%;
+}
+
+.animacaoSeta{
+    position:relative;
+    animation: movimentoSeta 2s ease-in-out infinite;
+}
+
+@keyframes movimentoSeta{
+    0%{
+        top: -40px;
+    }
+    50%{
+        top: 0;
+    }
+    100%(
+        top: -40px;
+    )
+}
+/*fim do titulo*/
+
+/*Carrosel de Cursos*/
+.displayCarrossel {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: -50px;
+}
+
+
+.posicaoPersonagem{
+    position:relative;
+    top:-50px;
+
+}
+
+.preenchimentoCursos{
+    padding: 3% 0;
+}
+
+.containerNomeCursos{
+    display: flex;
+    padding: 3%;
+    width: 100%;
+    gap: 40px;
+    background-color: #ffffff5c;
+    margin: 5% 0 10%;
+}
+
+.letraBranca{
+    color: var(--branco-300);
+}
+
+.tamanhoTituloCarreira{
+    font-size: 2rem;
+}
+
+.containerCursos{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.containerSoftSkills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.tamanhoTituloSoftSkills{
+    font-size: 1.4rem;
+}
+
+.textoSkills{
+    opacity: 0.7;
+    font-size: 1.3rem;
+}
+
+.containerNivelSkills{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.tamanhoEstrela{
+    scale: 1.5;
+}
