@@ -1,19 +1,39 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 
-    font-family:"Monteserrat", sans-serif;
-    }
+    font-family: "Montserrat", sans-serif;
+}
 
 :root{
     --roxo-100: #ded0f173;
     --roxo-200: #8E35FF;
     --roxo-300: #5A13B4;
     --roxo-400: rgb(59, 18, 112); 
-        
-    --branco-300: #ffffff;
     
+    --branco-300: #ffffff;
+
     --dourado-300: #CC7F0B;
+}
+
+a{
+    color: var(--roxo-300);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+h1, h2, p, span{
+    color: var(--roxo-400);
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+header{
+    margin: 2% 15%;
 }
 
 footer{
@@ -23,36 +43,15 @@ footer{
     padding: 2%;
 }
 
-a{
-    color: var(--roxo-300);
-    font-size: 0.875rem;
-    text-decoration: none;
-}
-
-h1,h2,p, span{
-color:var(--roxo-400);
-}
-
-h1{
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-header{
-    margin: 2% 15%;
-}
-
 .tamanhoSecao{
-    margin: 4% 15%;
+        margin: 4% 15%;
 }
 
 
-
-/*cabecalho*/
+/*Cabeçalho*/
 .menuNavegacao{
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -60,50 +59,42 @@ header{
     align-items: center;
 }
 
-.inputHeader{
+.inputHeader, .inputHeader::placeholder, .inputHeader:focus{
     border: none;
-    color: var(--roxo-300)
-}
-
-.inputHeader:focus{
     outline:none;
+    color: var(--roxo-300);
 }
-
-.inputHeader::placeholder{
-    color:var(--roxo-300)
-}
-
 
 .campoPesquisa{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     border: 1px solid var(--roxo-300);
     opacity: 0.40;
     padding: 0.1875rem 0.8125rem;
 }
+/*Fim Cabeçalho*/
 
-/*fim do cabecalho*/
 
-
-/*titulo*/
-.subtitulo{
+/*Título*/
+.subTitulo {
     font-size: 6.5rem;
     max-width: 65%;
     font-weight: 300;
 }
-.posicaoSubtitulo{
-display: flex;
-align-items: flex-end;
-gap:8%;
+
+.posicaoSubTitulo{
+    display: flex;
+    align-items: flex-end;
+    gap: 8%;
 }
 
 .tamanhoTexto{
-max-width: 14%;
+    max-width: 14%;
 }
 
 .animacaoSeta{
-    position:relative;
+    position: relative;
     animation: movimentoSeta 2s ease-in-out infinite;
 }
 
@@ -111,16 +102,19 @@ max-width: 14%;
     0%{
         top: -40px;
     }
+
     50%{
         top: 0;
     }
-    100%(
-        top: -40px;
-    )
-}
-/*fim do titulo*/
 
-/*Carrosel de Cursos*/
+    100%{
+        top: -40px;
+    }
+}
+/*Sim Título*/
+
+
+/*Carrossel de Cursos*/
 .displayCarrossel {
     display: flex;
     align-items: flex-start;
@@ -129,15 +123,25 @@ max-width: 14%;
     margin-bottom: -50px;
 }
 
-
 .posicaoPersonagem{
-    position:relative;
-    top:-50px;
-
+    position: relative;
+    top: -50px;
 }
 
 .preenchimentoCursos{
     padding: 3% 0;
+}
+
+.tamanhoTituloCarreira{
+    font-size: 2rem;
+}
+
+.letraBranca{
+    color: var(--branco-300);
+}
+
+.tamanhoTituloSoftSkills{
+    font-size: 1.4rem;
 }
 
 .containerNomeCursos{
@@ -149,15 +153,7 @@ max-width: 14%;
     margin: 5% 0 10%;
 }
 
-.letraBranca{
-    color: var(--branco-300);
-}
-
-.tamanhoTituloCarreira{
-    font-size: 2rem;
-}
-
-.containerCursos{
+.containerBotoes{
     display: flex;
     align-items: flex-end;
     gap: 10px;
@@ -167,10 +163,14 @@ max-width: 14%;
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+    gap: 5%;
+    width: 105%;
 }
 
-.tamanhoTituloSoftSkills{
-    font-size: 1.4rem;
+.containerSkills{    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .textoSkills{
@@ -186,4 +186,101 @@ max-width: 14%;
 
 .tamanhoEstrela{
     scale: 1.5;
+}
+
+.botaoInscrever{
+    background-color: var(--roxo-200);
+    color: var(--branco-300);
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2% 0;
+    position: relative;
+    top: 45px;
+}
+
+/*Fim Carrossel de Cursos*/
+
+
+
+/*Blog*/
+
+.containerPostBlog{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.corTexto{
+    color: var(--dourado-300);
+}
+
+.containerBotao{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    max-width: 340px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.containerBotao:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(59, 18, 112, 0.2);
+}
+
+.containerTituloPost{
+    padding: 4%;
+}
+
+.containerInformacoesPost{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Fim Blog*/
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1919px){
+    header{
+        margin: 2% 10%;
+    }
+
+    .tamanhoSecao {
+        margin: 4% 10%;
+    }
+
+    .subTitulo {
+        font-size: 5.5rem;
+    }
+
+    .tamanhoTexto{
+        max-width: 16%;
+        font-size: 0.9rem;
+    }
+
+    .botaoInscrever{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 2560px){
+    header{
+        margin: 2% 25%;
+    }
+
+    .tamanhoSecao {
+        margin: 4% 25%;
+    }
 }
